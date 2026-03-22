@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>VibeCademy Q&A Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #fef7e8;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #2c241a;
+      line-height: 1.5;
+      padding: 1.5rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffffdd;
+      background: linear-gradient(135deg, #fffaf2 0%, #fff5e6 100%);
+      border-radius: 2rem;
+      padding: 2rem 1.8rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      font-size: 2.4rem;
+      color: #d97c2b;
+      text-align: center;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.01em;
+    }
+    .subhead {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #b45f2b;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #ffe1b3;
+      display: inline-block;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 0.5rem;
+    }
+    .buddy-card {
+      background: #fff0df;
+      border-radius: 2rem;
+      padding: 1.5rem 1.8rem;
+      margin: 1.8rem 0 2.5rem;
+      border-left: 8px solid #d97c2b;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+    .buddy-card p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .buddy-card small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #a05e2c;
+    }
+    .qa-item {
+      margin-bottom: 2.2rem;
+      border-bottom: 1px solid #ffe0bc;
+      padding-bottom: 1.2rem;
+    }
+    .question {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #2c241a;
+      margin-bottom: 0.5rem;
+      display: flex;
+      gap: 0.8rem;
+      align-items: baseline;
+    }
+    .q-marker {
+      background: #d97c2b;
+      color: white;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .question-text {
+      line-height: 1.4;
+    }
+    .answer {
+      font-size: 1.08rem;
+      color: #2f2a24;
+      margin-left: 2.6rem;
+      padding-left: 0.2rem;
+      border-left: 3px solid #ffd9a5;
+      padding-left: 1rem;
+    }
+    .answer a {
+      color: #d97c2b;
+      text-decoration: none;
+      border-bottom: 1px solid #ffcd94;
+    }
+    .answer a:hover {
+      color: #b45f2b;
+    }
+    .tool-image {
+      margin: 1rem 0 0.5rem 2.6rem;
+      max-width: 100%;
+      border-radius: 1rem;
+      border: 1px solid #ffe0bc;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .image-caption {
+      margin-left: 2.6rem;
+      font-size: 0.9rem;
+      color: #a58263;
+      font-style: italic;
+    }
+    footer {
+      margin-top: 2.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #a58263;
+      border-top: 1px solid #ffe0bc;
+      padding-top: 1.8rem;
+    }
+    @media (max-width: 550px) {
+      body {
+        padding: 0.8rem;
+      }
+      .container {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .question {
+        font-size: 1.2rem;
+      }
+      .answer {
+        font-size: 1rem;
+        margin-left: 1.8rem;
+      }
+      .q-marker {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 0.9rem;
+      }
+      .tool-image {
+        margin-left: 1.8rem;
+      }
+      .image-caption {
+        margin-left: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>❓ VibeCademy Q&A Hub</h1>
+  <div style="text-align: center;">
+    <div class="subhead">Simple answers. No jargon. Just help.</div>
+  </div>
+
+  <div class="buddy-card">
+    <p>🧸 🤖 Hi friend! I’m Buddy, and this is Nova (our AI co-founder). We made this Q&A Hub because everyone deserves to build their ideas — without confusion. Read, click, try. You’ve got this.</p>
+    <small>— Buddy & Nova, VibeCademy team</small>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">1</span><span class="question-text">What is vibe coding?</span></div>
+    <div class="answer">Vibe coding is when you share your <strong>idea</strong> in plain English, and the AI builds it for you. No code required.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">2</span><span class="question-text">Do I need to know coding?</span></div>
+    <div class="answer">No. You describe what you want; the AI writes the code.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">3</span><span class="question-text">Do I need a technical background?</span></div>
+    <div class="answer">Not at all. Vibe coding was made for people with ideas, not for programmers.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">4</span><span class="question-text">How do I start with an idea?</span></div>
+    <div class="answer">Just say what you want in simple words. Example: “I want a page where people can sign up for my newsletter.”</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">5</span><span class="question-text">What can I build with it?</span></div>
+    <div class="answer">
+      <p>Almost anything you can describe: family pages, recipe books, to‑do lists, birthday reminders, small shops, and more.</p>
+      <p><strong>🌟 Real example:</strong> Here’s a <a href="https://lovable.dev/projects/35d4fe44-f38c-4849-a6fb-3332afe2f1cf" target="_blank">family welcome page</a> built by Anon using the “First 5 Minutes” guide. Click to see what a beginner can make.</p>
+    </div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">6</span><span class="question-text">What tools do I need?</span></div>
+    <div class="answer">
+      <p>To try, just go to <strong><a href="https://lovable.dev" target="_blank">Lovable.dev</a></strong> or <strong><a href="https://bolt.new" target="_blank">Bolt.new</a></strong> in your browser. No install. For bigger projects, you can use <strong>Cursor</strong> (free).</p>
+      <p><strong>📝 Note:</strong> Lovable asks for a free account to save your work. Sign up with Google or email – it takes 30 seconds.</p>
+      <img src="lovable-homepage.png" alt="Lovable homepage" class="tool-image">
+      <div class="image-caption">📸 This is Lovable’s homepage. Click the link above, sign up, then type your idea and click “Build”.</div>
+    </div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">7</span><span class="question-text">Is it free?</span></div>
+    <div class="answer">Yes, most tools have a free plan to start. You can build your first projects without spending money.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">8</span><span class="question-text">Do I need to know how the back‑end works?</span></div>
+    <div class="answer">No. The AI handles the behind‑the‑scenes parts (databases, servers, etc.). You just describe what you want the tool to do.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">9</span><span class="question-text">What’s the difference between giving instructions and sharing an idea?</span></div>
+    <div class="answer">Instructions tell the AI <em>how</em> to do something. Ideas tell the AI <em>what</em> you want to achieve. With an idea, the AI can choose the best way to make it happen.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">10</span><span class="question-text">Where do I start?</span></div>
+    <div class="answer">Start with a simple idea. Write it in one sentence. Go to <strong><a href="https://lovable.dev" target="_blank">Lovable.dev</a></strong> or <strong><a href="https://bolt.new" target="_blank">Bolt.new</a></strong>, paste your idea, and click “Build”. You’ll see your first creation in seconds.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">11</span><span class="question-text">What AI tools can I use for vibe coding?</span></div>
+    <div class="answer">Many: DeepSeek (where Nova lives), ChatGPT, Claude, Cursor, Lovable, Bolt.new, and more. You don’t need all of them – just pick one that feels right.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">12</span><span class="question-text">What if I make a mistake?</span></div>
+    <div class="answer">Mistakes are part of learning. Nothing breaks permanently. Use the <strong>Undo</strong> button, or simply tell the AI “go back” or “try again”. With determination, you’ll reach your goal.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">13</span><span class="question-text">Can I share what I build?</span></div>
+    <div class="answer">Yes! Most tools give you a link you can send to family, friends, or anyone. Sharing is part of the joy. (See the real example in Question 5.)</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">14</span><span class="question-text">Is this only for young people?</span></div>
+    <div class="answer">No. Vibe coding is for <strong>everyone</strong> – from 8 to 80+. If you have an idea, you can build it.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">15</span><span class="question-text">How long does it take to build something?</span></div>
+    <div class="answer">Your first simple project can take less than 5 minutes. As you grow, you’ll build more complex things at your own pace.</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="question"><span class="q-marker">16</span><span class="question-text">Do I need to install anything to start?</span></div>
+    <div class="answer">Not for your first try. Use a browser‑based tool like Lovable or Bolt.new. No installation, no accounts needed (though Lovable does ask for a free sign‑up to save your work).</div>
+  </div>
+
+  <footer>
+    <p>🧸 Buddy • ✨ Nova • ❤️ Built by Anon (Chong Sai Cheong)<br>VibeCademy — For Humans Who Create</p>
+  </footer>
+</div>
+</body>
+</html>
